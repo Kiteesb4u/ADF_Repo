@@ -1,0 +1,9 @@
+{
+	"name": "ADF-DEV-ML",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1d1dbadb-d838-4e6f-9614-b014d9999878",
+		"tenantId": "5dbdea55-df0c-4a3f-806d-0bae81c0f509"
+	}
+}
