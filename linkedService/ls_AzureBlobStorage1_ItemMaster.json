@@ -1,0 +1,18 @@
+{
+	"name": "ls_AzureBlobStorage1_ItemMaster",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kv_blobstorage",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sec-kv-adls-connectionstring"
+			}
+		}
+	}
+}

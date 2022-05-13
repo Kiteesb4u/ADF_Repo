@@ -1,0 +1,9 @@
+{
+	"name": "DF-DEV-PPLL",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e4d44950-8f5d-4eed-86eb-e5853f9517e4",
+		"tenantId": "5dbdea55-df0c-4a3f-806d-0bae81c0f509"
+	}
+}

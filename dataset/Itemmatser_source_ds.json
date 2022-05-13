@@ -1,0 +1,43 @@
+{
+	"name": "Itemmatser_source_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureBlobStorage1_ItemMaster",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Item master",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Item master.xlsx",
+				"container": "input"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Item Number",
+				"type": "String"
+			},
+			{
+				"name": "Product Group",
+				"type": "String"
+			},
+			{
+				"name": "Product Line",
+				"type": "String"
+			},
+			{
+				"name": "Product Sub Group",
+				"type": "String"
+			},
+			{
+				"name": "Product Type",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
