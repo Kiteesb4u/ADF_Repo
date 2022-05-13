@@ -1,0 +1,23 @@
+{
+	"name": "ds_sink_salesrep",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_abs_salesrep",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "salesrep",
+				"container": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
