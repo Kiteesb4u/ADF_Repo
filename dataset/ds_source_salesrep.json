@@ -1,0 +1,28 @@
+{
+	"name": "ds_source_salesrep",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_abs_salesrep",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sales rep.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Manager;Manager Number;Path;Sales Rep Name;Sales Rep Name1;Sales Rep Name2;Sales Rep Name3;Sales Rep ID",
+				"type": "String"
+			}
+		]
+	}
+}
